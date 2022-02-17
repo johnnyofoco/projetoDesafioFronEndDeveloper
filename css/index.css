@@ -1,0 +1,13 @@
+/*GLOBAL*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif
+}
+
+/*teste*/
+h1{
+  color: red;
+}
