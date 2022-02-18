@@ -1,9 +1,70 @@
 /*GLOBAL*/
 
-*{
+/*VARIABLES*/
+:root {
+  --color-primary: #707070;
+  --color-secondary: #ffffff;
+  --color-tertiary: #888888;
+
+}
+
+/*RESET*/
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Helvetica, sans-serif
 }
 
+
+/*HEADER*/
+header {
+  height: 400px;
+  text-align: center;
+  background-color: var(--color-primary);
+  background: linear-gradient(45deg, var(--color-primary), var(--color-tertiary));
+  ;
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 70%);
+
+}
+
+header .title {
+  color: var(--color-secondary);
+  padding: 70px 0 50px 0;
+}
+
+header .title h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+header .title h1 {
+  padding-bottom: 24px;
+  font-size: 40px;
+}
+
+header .title p{
+  font-size: 14px;
+  font-weight: normal;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 40px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--color-tertiary);
+  background-color: var(--color-secondary);
+  padding: 10px 30px;
+  font-size: 12px;
+  box-shadow: 0px 1px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 4px;
+}
+
+header nav ul li a:hover {
+  background-color: var(--color-tertiary);
+  color: var(--color-secondary);
+}
