@@ -5,6 +5,7 @@
   --color-primary: #707070;
   --color-secondary: #ffffff;
   --color-tertiary: #888888;
+  --font-main: Helvetica, sans-serif
 
 }
 
@@ -13,7 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica, sans-serif
+  font-family: var(--font-main)
 }
 
 
@@ -43,7 +44,7 @@ header .title h1 {
   font-size: 40px;
 }
 
-header .title p{
+header .title p {
   font-size: 14px;
   font-weight: normal;
 }
@@ -67,4 +68,63 @@ header nav ul li a {
 header nav ul li a:hover {
   background-color: var(--color-tertiary);
   color: var(--color-secondary);
+}
+
+/*ARTICLE*/
+
+article {
+  color: var(--color-tertiary);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 290px 90px 290px;
+}
+
+.articleSection {
+  max-width: 540px;
+}
+
+.articleSection h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.articleSection p {
+  font-size: 12px;
+  padding: 0 20px 0 0;
+}
+
+.emailSection {
+  width: 340px;
+}
+
+.emailSection form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.emailSection label {
+  max-width: 340px;
+  font-size: 12px;
+  padding: 7px 0;
+}
+
+.emailSection input[type=text],input[type=email], input[type=text] {
+  margin-bottom: 20px;
+  height: 30px;
+}
+
+.radio{
+  padding: 0 0 20px 0;
+}
+
+.radio label:nth-of-type(1) {
+  margin-right: 20px;
+}
+
+.emailSection .btnSubmit {
+  color: var(--color-tertiary);
+  font-size: 16px;
+  height: 40px;
 }
