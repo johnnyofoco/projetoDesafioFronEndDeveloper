@@ -96,7 +96,7 @@
       <span id="by"></span>
       <span id="or"></span>
 
-      <button class="buy">Comprar</button>
+      <button class="btnBuy">Comprar</button>
     </div>
     <!--product-->
 
@@ -106,18 +106,44 @@
   </main>
 
   <section class="shareSection">
-    <h2>Compartilhe a novidade</h2>
-    <h3>
-      Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!
-    </h3>
-    <p></p>
-    <form action="">
-      <label for="">Nome do seu amigo:</label>
-      <input type="text" id="shareName">
+    <div class="title">
+      <span>
+        Compartilhe a novidade
+      </span>
+    </div>
+    <h3>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h3>
 
-      <label for="">E-mail:</label>
-      <input type="email" name="shareEmail" id="shareEmail">
-      <input type="submit" value="Enviar agora">
+
+    <form action="">
+
+      <div class="formContainer">
+
+        <div class="boxLabelNome">
+          <div class="labelNome">
+            <label for="">Nome do seu amigo:</label>
+          </div>
+          <!--labelNome-->
+          <input type="text" id="shareName">
+        </div>
+        <!--boxLabel-->
+
+        <div class="boxLabelEmail">
+          <div class="labelEmail">
+            <label for="">E-mail:</label>
+          </div>
+          <!--labelEmail-->
+          <input type="email" name="email" id="shareEmail">
+
+        </div>
+        <!--boxLabelEmail-->
+
+      </div>
+      <!--formContainer-->
+
+      <div class="btnSubmitNow">
+        <input type="submit" value="Enviar agora">
+      </div>
+
     </form>
   </section>
 
