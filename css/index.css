@@ -147,6 +147,25 @@ main {
   text-align: center;
 }
 
+main .title {
+  height: 1px;
+  background-color: var(--color-tertiary);
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+main .title span {
+  background-color: var(--color-secondary);
+  color: var(--color-tertiary);
+  font-weight: bold;
+  position: relative;
+  top: -0.5em;
+  padding: 0 10px;
+
+}
+
 main .btnBuy {
   color: var(--color-tertiary);
   font-size: 16px;
@@ -275,7 +294,7 @@ footer {
   background-color: var(--color-primary);
   background: linear-gradient(45deg, var(--color-primary), var(--color-tertiary));
   clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%)
-  /*eixo-horizontal eixo-vertical: ponto zero top-left*/
+    /*eixo-horizontal eixo-vertical: ponto zero top-left*/
 }
 
 footer p {
