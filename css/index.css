@@ -23,7 +23,7 @@ header {
   background-color: var(--color-primary);
   background: linear-gradient(45deg, var(--color-primary), var(--color-tertiary));
   ;
-  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 70%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 65%);
 
 }
 
@@ -220,6 +220,7 @@ main .addMoreProducts:hover {
   margin-top: 40px;
   margin-bottom: 34px;
 }
+
 .shareSection form .formContainer {
   display: flex;
   justify-content: space-between;
@@ -231,9 +232,10 @@ main .addMoreProducts:hover {
   min-width: 340px;
 }
 
-.formContainer 
-.labelNome, input[type=text],
-.labelEmail, input[type=email] {
+.formContainer .labelNome,
+input[type=text],
+.labelEmail,
+input[type=email] {
   min-width: 340px;
 }
 
@@ -262,4 +264,27 @@ main .addMoreProducts:hover {
   cursor: pointer;
   background-color: var(--color-tertiary);
   color: var(--color-secondary);
+}
+
+/*FOOTER*/
+
+footer {
+  height: 290px;
+  padding: 145px 0;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  background: linear-gradient(45deg, var(--color-primary), var(--color-tertiary));
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%)
+  /*eixo-horizontal eixo-vertical: ponto zero top-left*/
+}
+
+footer p {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer p:last-child {
+  margin-bottom: 80px;
 }
