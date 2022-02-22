@@ -180,8 +180,9 @@ main .containerProduct {
 }
 
 main .containerProduct .product {
-  height: 430px;
+  height: 445px;
   width: 200px;
+  margin-top: 10px;
   color: var(--text-color);
 }
 

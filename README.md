@@ -8,7 +8,7 @@ O teste avalia meus conhecimentos em HTML, CSS e Javascript.
 ### Rodando o projeto:
 Visualize o projeto rodando no seguinte endereço: https://johnnyofoco.github.io/projetoDesafioFronEndDeveloper/
 ou
-Faça download do repositóriio completo, instale o visual studio + extensão live Server. Abra o a pasta do repositório pelo VSCODE, e em seguida clique com o botão direito sobre o arquivo index.html e por fim clique na opção abrir com o live server.
+Faça download do repositório completo, instale o visual studio + extensão live Server. Abra o a pasta do repositório pelo VSCODE, e em seguida clique com o botão direito sobre o arquivo index.html e por fim clique na opção abrir com o live server.
 
 ### Critérios avaliados
 * Commits significativos;
