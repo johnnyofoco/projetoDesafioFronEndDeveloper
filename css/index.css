@@ -171,6 +171,13 @@ main .title span {
 
 }
 
+main .title h2 {
+  margin: 30px 0 ;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+
 main .containerProduct {
   max-width: 900px;
   display: flex;

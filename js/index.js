@@ -19,8 +19,41 @@ const containerProduct = document.querySelector('.containerProduct')
 const addMoreProducts = document.querySelector('.addMoreProducts')
 
 //Funções:
+
+/*########################################################*/
+
 //Função para carregar + 8 produtos:
 function loadProducts() {
+  //Funções para tratar o retorno da API
+  function transformToJson (response) {
+    return response.json()
+  }
+
+  function exibirNaTela(dados) {
+    
+    console.log(dados)
+  }
+  function exibirErro (dados) {
+    console.log('Ops, deu erro!')
+    const mainTitle = document.querySelector('main .title')
+    mainTitle.innerHTML += `<h2>Erro ao carregar os produtos</h2>`
+  }
+
+  //Trecho referente a conexão da API 
+  const configs = {
+    method: 'GET',
+    header: {}
+  }
+
+  const url = 'https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1'
+
+
+  fetch(url,configs)
+    .then(transformToJson)
+    .then(exibirNaTela)
+    .catch(exibirErro)
+
+  /*
   for (let index = 0; index < 8; index++) {
     console.log('cheguei aqui...')
     containerProduct.innerHTML += `<div class="product">
@@ -36,12 +69,11 @@ function loadProducts() {
                 </div>
                 `
     console.log('passei por aqui. tbm..')
-  }
+  }*/
 }
 
 //Listner´s
 addMoreProducts.addEventListener('click', loadProducts)
-
 
 //Bloco principal de execução:
 loadProducts() //Inicializa a página com 8 produtos
