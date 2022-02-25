@@ -11,7 +11,9 @@
   FEITO! B) Criar o(s) evento(s) listner(s);
   FEITO! C) Criar o metódo que realizará a conexão para consumir a API;
   FEITO! D) Criar o metódo/função que escreve dinamicamente os elementos do containerProduct (tantos os iniciais como os  demais);
-  E) Trabalhar na validação dos forms;
+  E) javaScript Trabalhar na validação dos forms;
+  F) CSS Construir a versão responsiva para Mobile;
+  G) Geral Refatorar o código CSS, javaScript e revisar a arquitetura;
 */
 
 //Elementos HTML
