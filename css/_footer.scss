@@ -1,0 +1,18 @@
+/*FOOTER*/
+footer {
+  height: 290px;
+  padding: 145px 0;
+  color: $text-color;
+  background: $color-primary;
+  /*background: linear-gradient(45deg, $color-primary), $color-tertiary));*/
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+  /*eixo-horizontal eixo-vertical: ponto zero top-left*/
+
+  p {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+}

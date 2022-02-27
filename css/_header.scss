@@ -1,0 +1,50 @@
+/*HEADER*/
+header {
+  height: 400px;
+  text-align: center;
+  background: $color-primary;
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 65%);
+
+  .title {
+    color: $text-color;
+    padding: 70px 0 50px 0;
+  
+    h2 {
+      font-size: 20px;
+      font-weight: normal;
+    }
+
+    h1 {
+      padding-bottom: 24px;
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 40px;
+
+   a {
+    text-decoration: none;
+    color: $text-color;
+    background: $color-secondary;
+    padding: 10px 30px;
+    font-size: 12px;
+    box-shadow: 0px 1px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 4px;
+
+      &:hover {
+        cursor: pointer;
+        background: $hover-color;
+        color: $text-color;
+      }
+    
+    }
+  }
+}

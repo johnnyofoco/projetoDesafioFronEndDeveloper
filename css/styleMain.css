@@ -1,0 +1,377 @@
+/*VARIABLES*/
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background: #300537;
+}
+
+/*HEADER*/
+header {
+  height: 400px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#300537), color-stop(#46005c), color-stop(#570087), color-stop(#6000b6), to(#5d12eb));
+  background: linear-gradient(to right, #300537, #46005c, #570087, #6000b6, #5d12eb);
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 65%);
+          clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 65%);
+}
+
+header .title {
+  color: #ffffff;
+  padding: 70px 0 50px 0;
+}
+
+header .title h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+header .title h1 {
+  padding-bottom: 24px;
+  font-size: 40px;
+}
+
+header .title p {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 40px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  background: #300537;
+  padding: 10px 30px;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 1px 6px #00000029;
+          box-shadow: 0px 1px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 4px;
+}
+
+header nav ul li a:hover {
+  cursor: pointer;
+  background: #000000;
+  color: #ffffff;
+}
+
+/*ARTICLE*/
+article {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 290px 90px 290px;
+}
+
+article .articleSection {
+  max-width: 540px;
+  margin-right: 60px;
+}
+
+article .articleSection h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+article .articleSection p {
+  font-size: 12px;
+  text-align: left;
+  padding: 0 20px 0 0;
+  line-height: 21px;
+}
+
+article .emailSection {
+  width: 340px;
+}
+
+article .emailSection form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+article .emailSection label {
+  max-width: 340px;
+  font-size: 12px;
+  padding: 7px 0;
+}
+
+article .emailSection input[type=text],
+article .emailSection input[type=email],
+article .emailSection input[type=text] {
+  margin-bottom: 20px;
+  height: 30px;
+}
+
+article .emailSection .radio {
+  padding: 0 0 20px 0;
+}
+
+article .emailSection .radio label:nth-of-type(1) {
+  margin-right: 20px;
+}
+
+article .emailSection .btnSubmit {
+  color: #ffffff;
+  font-size: 16px;
+  height: 40px;
+  max-width: 340px;
+  background: #300537;
+  -webkit-box-shadow: 0px 1px 6px #00000029;
+          box-shadow: 0px 1px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 4px;
+}
+
+article .emailSection .btnSubmit:hover {
+  cursor: pointer;
+  background: #000000;
+  color: #ffffff;
+}
+
+/*MAIN*/
+main {
+  text-align: center;
+}
+
+main .title {
+  height: 1px;
+  background: #ffffff;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+main .title span {
+  background: #300537;
+  color: #ffffff;
+  font-weight: bold;
+  position: relative;
+  top: -0.5em;
+  padding: 0 10px;
+}
+
+main .title h2 {
+  margin: 30px 0;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+main .containerProduct {
+  max-width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .containerProduct .product {
+  height: 445px;
+  width: 200px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+main .containerProduct .product:nth-of-type(4), main .containerProduct .product:nth-of-type(8) {
+  margin-right: 0;
+}
+
+main .containerProduct .product img {
+  width: 200px;
+}
+
+main .containerProduct .product h4, main .containerProduct .product p, main .containerProduct .product span {
+  text-align: left;
+  padding: 10px 0;
+}
+
+main .containerProduct .product h4 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+main .containerProduct .product p {
+  font-size: 12px;
+}
+
+main .containerProduct .product span {
+  display: block;
+  padding: 5px 0;
+  font-size: 12px;
+}
+
+main .containerProduct .product span:nth-of-type(2) {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+main .containerProduct .product .btnBuy {
+  color: #ffffff;
+  font-size: 16px;
+  padding: 6px 65px;
+  max-height: 30px;
+  max-width: 200px;
+  margin-top: 10px;
+  background: #300537;
+  -webkit-box-shadow: 0px 1px 6px #00000029;
+          box-shadow: 0px 1px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 4px;
+}
+
+main .containerProduct .product .btnBuy:hover {
+  cursor: pointer;
+  background: #000000;
+  color: #ffffff;
+}
+
+main .addMoreProducts {
+  margin-top: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  height: 40px;
+  padding: 10px 36px;
+  background: #300537;
+  -webkit-box-shadow: 0px 1px 6px #00000029;
+          box-shadow: 0px 1px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 4px;
+}
+
+main .addMoreProducts:hover {
+  cursor: pointer;
+  background: #000000;
+  color: #ffffff;
+}
+
+/*SECTION SHARE*/
+.shareSection {
+  margin-top: 140px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 100vw;
+}
+
+.shareSection h2 {
+  font-size: 18px;
+  color: linear-gradient(to right, #300537, #46005c, #570087, #6000b6, #5d12eb);
+  margin-bottom: 39px;
+}
+
+.shareSection .title {
+  height: 1px;
+  background: #ffffff;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.shareSection .title span {
+  background: #300537;
+  color: #ffffff;
+  font-weight: bold;
+  position: relative;
+  top: -0.5em;
+  padding: 0 10px;
+}
+
+.shareSection h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 40px;
+  margin-bottom: 34px;
+}
+
+.shareSection .formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 730px;
+  margin: 0 auto;
+}
+
+.shareSection .formContainer .labelNome, .shareSection .formContainer input[type=text], .shareSection .formContainer .labelEmail, .shareSection .formContainer input[type=email] {
+  min-width: 340px;
+  padding: 10px;
+  outline: none;
+}
+
+.shareSection .formContainer .boxLabelNome .labelNome, .shareSection .formContainer .labelEmail {
+  text-align: left;
+  font-size: 12px;
+  padding: 7px 0;
+}
+
+.shareSection .btnSubmitNow input[type=submit] {
+  color: #ffffff;
+  font-size: 16px;
+  height: 40px;
+  padding: 11px 86px;
+  background: #300537;
+  -webkit-box-shadow: 0px 1px 6px #00000029;
+          box-shadow: 0px 1px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  max-width: 260px;
+  max-height: 40px;
+  margin-top: 40px;
+  margin-bottom: 75px;
+}
+
+.shareSection .btnSubmitNow input[type=submit]:hover {
+  cursor: pointer;
+  background: #000000;
+  color: #ffffff;
+}
+
+/*FOOTER*/
+footer {
+  height: 290px;
+  padding: 145px 0;
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#300537), color-stop(#46005c), color-stop(#570087), color-stop(#6000b6), to(#5d12eb));
+  background: linear-gradient(to right, #300537, #46005c, #570087, #6000b6, #5d12eb);
+  /*background: linear-gradient(45deg, $color-primary), $color-tertiary));*/
+  -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+  /*eixo-horizontal eixo-vertical: ponto zero top-left*/
+}
+
+footer p {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 auto;
+  text-align: center;
+}
+/*# sourceMappingURL=styleMain.css.map */

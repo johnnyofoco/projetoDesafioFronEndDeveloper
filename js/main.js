@@ -13,7 +13,7 @@
   FEITO! D) Criar o metódo/função que escreve dinamicamente os elementos do containerProduct (tantos os iniciais como os  demais);
   E) javaScript Trabalhar na validação dos forms;
   F) CSS Construir a versão responsiva para Mobile;
-  G) Geral Refatorar o código CSS, javaScript e revisar a arquitetura;
+  G) Geral Refatorar o código CSS, revisar a arquitetura;
 */
 
 //Elementos HTML
