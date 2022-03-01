@@ -1,22 +1,8 @@
 /*
-  Objetivo: fazer que a classe/div products seja criada dinamicamente:
-  -Inicialmente 8 produtos são carregados utilizando a api;
-  -Após o usuário clicar em ainda mais produtos, deve ser criado em main + 1 div/container: containerProduct added 
-   com mais 8 produtos (8 classe/div products);
-/*
-
-/*
   PENDÊNCIAS:
-  FEITO! A) Carregar os elementos HTML;
-  FEITO! B) Criar o(s) evento(s) listner(s);
-  FEITO! C) Criar o metódo que realizará a conexão para consumir a API;
-  FEITO! D) Criar o metódo/função que escreve dinamicamente os elementos do containerProduct (tantos os iniciais como os  demais);
-  E) javaScript Trabalhar na validação dos forms;
-  F) CSS Construir a versão responsiva para Mobile;
-  G) Geral Refatorar o código CSS, revisar a arquitetura;
+ --javaScript Trabalhar na validação dos forms;
+ --CSS Construir a versão responsiva para Mobile;
 */
-
-//Elementos HTML
 
 const Main = {
   init: function () {
@@ -93,8 +79,6 @@ const Main = {
         console.log('Oh no!, this is a error!,' + error)
         Main.mainTitle.innerHTML = `<h2>Erro ao carregar os produtos</h2>`
       }
-
-      console.log('url final: ' + url + ', page: ' + page)
 
       fetch(url, configs)
         .then(transformToJson)

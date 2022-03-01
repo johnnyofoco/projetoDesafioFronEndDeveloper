@@ -23,5 +23,5 @@ Faça download do repositório completo, instale o visual studio + extensão liv
 *Visual Studio Code Versão: 1.64.2 64 bits
 *Extensão vscode: Live Server Versão: 5.7.4 ou superior
 
-*HTML5,CSS3 e javaScript
+*HTML5,CSS3, SASS e javaScript
 
