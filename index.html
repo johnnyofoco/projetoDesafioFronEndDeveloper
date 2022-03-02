@@ -64,21 +64,21 @@
       </p>
     </section>
     <section class="emailSection">
-      <form action="">
-        <label for="">Seu nome:</label>
-        <input type="text" id="name">
+      <form action="emailRegister.html" method="GET" name="register">
+        <label for="name">Seu nome:</label>
+        <input type="text" id="name" name="name" pattern="[a-zA-Z\s]+$" required placeholder="Informe seu nome completo" >
 
-        <label for="">E-mail</label>
-        <input type="email" name="email" id="email">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required placeholder="Informe seu email principal">
 
-        <label for="">CPF:</label>
-        <input type="text" id="cpf">
+        <label for="socialNumber">CPF:</label>
+        <input type="text" id="cpf" name="cpf"pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})" required placeholder="Digite seu CPF">
 
         <div class="radio">
-          <input type="radio" name="gender" id="male">
-          <label for="">Masculino</label>
-          <input type="radio" name="gender" id="female">
-          <label for="">Feminino</label>
+          <input type="radio" name="gender" id="male" required>
+          <label for="gender">Masculino</label>
+          <input type="radio" name="gender" id="female" required>
+          <label for="gender">Feminino</label>
         </div>
         <input type="submit" value="Enviar" class="btnSubmit">
       </form>
@@ -111,25 +111,25 @@
     <h3>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h3>
 
 
-    <form action="">
+    <form action="sharePage.html" method="GET">
 
       <div class="formContainer">
 
         <div class="boxLabelNome">
           <div class="labelNome">
-            <label for="">Nome do seu amigo:</label>
+            <label for="nameFriend">Nome do seu amigo:</label>
           </div>
           <!--labelNome-->
-          <input type="text" id="shareName">
+          <input type="text" id="shareName" name="nameFriend" pattern="[a-zA-Z\s]+$" required placeholder="Digite o nome do seu amigo">
         </div>
         <!--boxLabel-->
 
         <div class="boxLabelEmail">
           <div class="labelEmail">
-            <label for="">E-mail:</label>
+            <label for="email">E-mail:</label>
           </div>
           <!--labelEmail-->
-          <input type="email" name="email" id="shareEmail">
+          <input type="email" name="email" id="shareEmail" required placeholder="Digite o email do seu amigo">
 
         </div>
         <!--boxLabelEmail-->

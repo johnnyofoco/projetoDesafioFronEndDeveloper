@@ -121,8 +121,9 @@ article .emailSection label {
 article .emailSection input[type=text],
 article .emailSection input[type=email],
 article .emailSection input[type=text] {
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   height: 30px;
+  padding: 10px;
 }
 
 article .emailSection .radio {

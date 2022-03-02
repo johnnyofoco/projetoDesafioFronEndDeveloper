@@ -1,9 +1,3 @@
-/*
-  PENDÊNCIAS:
- --javaScript Trabalhar na validação dos forms;
- --CSS Construir a versão responsiva para Mobile;
-*/
-
 const Main = {
   init: function () {
     this.cacheSelectors()
